@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boldog Szülinapot!</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Alap beállítások */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #1a1a1a, #333333);
+            color: white;
+            padding: 20px;
+        }
+
+        /* Konténer */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+		
+        }
+		@keyframes colorChange {
+			0% { color: #FF6B3C; }
+			50% { color: #FFB84C; }
+			100% { color: #FF6B3C; }
+			}
+
+        /* Címsor */
+        h1 {
+            font-family: 'Dancing Script', serif;
+            font-size: 40px;
+            margin-bottom: 30px;
+			margin-top: 40px; /* A bevezető szöveg alatti tér is lehet egy kicsit nagyobb */
+            color: #f1af05;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+			animation: colorChange 3s infinite; /* Színváltoztatás animáció */
+        }
+
+        /* Szövegek */
+        p {
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            margin-bottom: 20px;
+			
+        }
+
+        /* Bevezető szöveg külön stílus */
+        .intro {
+            margin-bottom: 40px;
+			margin-top: 40px;
+			line-height: 1.6; /* Több hely a sorok között */
+        }
+
+        /* Képek */
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            margin-top: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Kép nagyobbá válik, amikor rávisszük az egeret */
+        }
+
+        /* Média lekérdezés mobil eszközökre */
+        @media (max-width: 390px) {
+            h1 {
+                font-size: 28px; /* Kisebb cím, hogy jobban illeszkedjen mobil képernyőhöz */
+            }
+            p {
+                font-size: 16px; /* Kisebb szöveg a mobil képernyőhöz */
+		
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="intro"> 
+        Találkozzunk Március 9-én vasárnap 18:30-kor a Warm Up Cocktail Bárban, ahol vendégem vagy egy koktélra, majd utána egy "romantikus" előadásra 
+        a Corinthia Budapestben!</p>
+		
+		<h1>Boldog Szülinapot Betti!</h1>
+       
+
+        <img src="img/warm.jpg" alt="WarmUp">
+        <p><strong>18:30 Warm Up Cocktail Bar</strong> – egy különleges ital & élménybeszámóló!</p>
+
+        <img src="img/candlelight.jpg" alt="Candlelight Coldplay koncert">
+        <p><strong>20:00 Candlelight koncert</strong> – Coldplay dalai gyertyafényben!</p>
+    </div>
+
+</body>
+</html>

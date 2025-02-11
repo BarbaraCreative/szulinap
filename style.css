@@ -1,0 +1,68 @@
+/* Alap beállítások */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+}
+
+/* Konténer */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+@keyframes colorChange {
+    0% { color: #FF6B3C; }
+    50% { color: #FFB84C; }
+    100% { color: #FF6B3C; }
+}
+
+/* Címsor */
+h1 {
+    font-family: 'Dancing Script', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Szövegek */
+p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Bevezető szöveg */
+.intro {
+    margin-top: 40px; /* Növeltem a margót, hogy még több hely legyen a bevezető szöveg és a cím között */
+    margin-bottom: 30px; /* Kevesebb térköz alul, hogy ne legyen túl nagy */
+}
+
+/* Kép és szöveg közötti távolság */
+.container p {
+    margin-top: 20px; /* Képek és szöveg közötti távolság finomítása */
+}
+
+/* Képek */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 390px) {
+    h1 {
+        font-size: 28px;  /* Még kisebb cím, hogy képernyőn illeszkedjen */
+    }
+    p {
+        font-size: 16px;  /* Kisebb szöveg a képernyőhöz */
+		margin-bottom: 20px;
+    }
+img:hover {
+    transform: scale(1.05); /* Kép nagyobbá válik, amikor rávisszük az egeret */
+}
